@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7969d38-d6fa-48f7-90a1-814c0e147b74" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/minty/database/Db.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/minty/tests/DbTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/minty/models/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minty/models/Hero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/minty/models/IHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minty/models/IHero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/minty/models/ISquad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minty/models/ISquad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/minty/models/Squad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minty/models/Squad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/minty/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minty/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/minty/database/Db.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minty/database/Db.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +21,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -38,17 +37,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;OverrideImplement.generate.javadoc&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "OverrideImplement.generate.javadoc": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.minty.tests" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.minty.Main" />
       <module name="hero-squad" />
@@ -62,9 +71,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DbTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hero-squad" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.minty.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.minty.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.minty.tests.DbTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DbTest.connect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hero-squad" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.minty.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.minty.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.minty.tests.DbTest" />
+      <option name="METHOD_NAME" value="connect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.DbTest" />
+        <item itemvalue="JUnit.DbTest.connect" />
       </list>
     </recent_temporary>
   </component>
@@ -80,11 +122,22 @@
       <workItem from="1651314497252" duration="4520000" />
       <workItem from="1651386988595" duration="2021000" />
       <workItem from="1651392519138" duration="1689000" />
-      <workItem from="1651397012677" duration="2287000" />
+      <workItem from="1651397012677" duration="5815000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/minty/database/Db.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
