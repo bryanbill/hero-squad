@@ -51,4 +51,11 @@ class HeroDaoTest {
         heroDao.createHero(connection, new Hero(2,"Batman", "Joker", "Speed", 2));
         assertEquals(2, heroDao.getAllHeroes(connection).size());
     }
+
+    @Test
+    void getHeroBySquadId() {
+        heroDao.createHero(connection, new Hero(1,"Superman", "Super Strength", "Kryptonite", 1));
+        heroDao.createHero(connection, new Hero(2,"Batman", "Joker", "Speed", 2));
+        assertEquals(1, heroDao.getHeroBySquadId(connection, 1).getId());
+    }
 }

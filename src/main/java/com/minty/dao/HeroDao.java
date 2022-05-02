@@ -59,9 +59,5 @@ public class HeroDao implements IHero {
         }
     }
 
-    public int clearAllHeroes(Connection sql) {
-        return sql.createQuery("DELETE FROM heroes")
-                .executeUpdate().getResult();
-    }
 
 }
