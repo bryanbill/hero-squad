@@ -1,0 +1,42 @@
+/*Import font nunito from google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+
+body {
+    font-family: "Nunito", 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.bg-cream {
+    background-color: #f5f5f5;
+}
+
+.blue-to-white {
+    background: rgb(187, 239, 255);
+    background: -moz-linear-gradient(10deg, rgba(187, 239, 255, 1) 8%, rgba(103, 233, 255, 1) 29%, rgba(79, 195, 247, 1) 56%, rgba(58, 170, 255, 1) 97%);
+    background: -webkit-linear-gradient(10deg, rgba(187, 239, 255, 1) 8%, rgba(103, 233, 255, 1) 29%, rgba(79, 195, 247, 1) 56%, rgba(58, 170, 255, 1) 97%);
+    background: linear-gradient(10deg, rgba(187, 239, 255, 1) 8%, rgba(103, 233, 255, 1) 29%, rgba(79, 195, 247, 1) 56%, rgba(58, 170, 255, 1) 97%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bbefff", endColorstr="#3aaaff", GradientType=1);
+
+}
+
+.rotate-45{
+    transform: rotate(45deg);
+}
+.rotate-135{
+    transform: rotate(135deg);
+}
+.rotate-205{
+    transform: rotate(45deg);
+}
+
+.btn-outline-custom{
+    border: 1px solid #000;
+    color: #000;
+    background-color: transparent;
+}
