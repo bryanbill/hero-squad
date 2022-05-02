@@ -5,21 +5,21 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
+
 class SeederTest {
 
-    @BeforeEach
-    void setUp() {
-    }
 
     @AfterEach
     void tearDown() {
+        new Seeder().clearDb();
     }
 
     @Test
     void seedDb() {
+      assertDoesNotThrow(() -> {
+        new Seeder().seedDb();
+      });
     }
 
-    @Test
-    void clearDb() {
-    }
+
 }
