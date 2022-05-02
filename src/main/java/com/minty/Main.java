@@ -5,7 +5,8 @@ import com.minty.database.Db;
 import com.minty.database.Seeder;
 import com.minty.models.Hero;
 import org.sql2o.Connection;
-import static  spark.Spark.*;
+
+import static spark.Spark.get;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,14 +16,9 @@ public class Main {
         HeroDao heroDao = new HeroDao();
 
         get("/", (req, res) -> {
-            heroDao.createHero(sql, new Hero(1,"Superman", "Super Strength", "Kryptonite", 1));
-
-            System.out.println(heroDao.getHero(sql, 2).getName());
+            heroDao.createHero(sql, new Hero(1, "Superman", "Super Strength", "Kryptonite", 1));
             return "Hello World";
         });
     }
 
-    public  void handler() {
-
-    }
 }

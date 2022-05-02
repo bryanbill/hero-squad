@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7969d38-d6fa-48f7-90a1-814c0e147b74" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/minty/dao/ISquad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/minty/dao/SquadDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/minty/dao/SquadDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/minty/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minty/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/minty/dao/SquadDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minty/dao/SquadDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -60,12 +62,12 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.minty.database" />
       <recent name="com.minty.dao" />
+      <recent name="com.minty.database" />
       <recent name="com.minty.tests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HeroDaoTest">
+  <component name="RunManager" selected="JUnit.SquadDaoTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.minty.Main" />
       <module name="hero-squad" />
@@ -94,38 +96,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HeroDaoTest.createHero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hero-squad" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.minty.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.minty.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.minty.dao.HeroDaoTest" />
-      <option name="METHOD_NAME" value="createHero" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HeroDaoTest.deleteHero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hero-squad" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.minty.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.minty.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.minty.dao.HeroDaoTest" />
-      <option name="METHOD_NAME" value="deleteHero" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HeroDaoTest.getHero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hero-squad" />
       <extension name="coverage">
@@ -142,13 +112,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SquadDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hero-squad" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.minty.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.minty.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.minty.dao.SquadDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SquadDaoTest.createSquad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hero-squad" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.minty.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.minty.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.minty.dao.SquadDaoTest" />
+      <option name="METHOD_NAME" value="createSquad" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SquadDaoTest" />
+        <item itemvalue="JUnit.SquadDaoTest.createSquad" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.HeroDaoTest" />
         <item itemvalue="JUnit.HeroDaoTest.getHero" />
-        <item itemvalue="JUnit.HeroDaoTest.deleteHero" />
-        <item itemvalue="JUnit.HeroDaoTest.createHero" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +166,7 @@
       <workItem from="1651386988595" duration="2021000" />
       <workItem from="1651392519138" duration="1689000" />
       <workItem from="1651397012677" duration="8119000" />
-      <workItem from="1651480092854" duration="7370000" />
+      <workItem from="1651480092854" duration="9807000" />
     </task>
     <servers />
   </component>
@@ -180,6 +181,10 @@
           <line>18</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.sql2o.Sql2oException" package="org.sql2o" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

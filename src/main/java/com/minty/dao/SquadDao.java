@@ -11,10 +11,11 @@ public class SquadDao implements ISquad {
     @Override
     public int createSquad(Connection sql, Squad squad) {
       try{
-          String sqlQuery = "INSERT INTO squads (squadname, maxsize, createdat) VALUES (:squadName, :maxsize, :createdAt)";
+          String sqlQuery = "INSERT INTO squads (squadname,cause, maxsize, createdat) VALUES (:squadName, :cause, :maxSize, :createdAt)";
           return  (int)sql.createQuery(sqlQuery, true)
                   .bind(squad)
                   .executeUpdate().getKey();
+
       }catch (Exception e){
           throw new RuntimeException("Error Occured", e);
       }
