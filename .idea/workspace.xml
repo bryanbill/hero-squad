@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7969d38-d6fa-48f7-90a1-814c0e147b74" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/minty/dao/SquadDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/minty/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minty/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/minty/dao/SquadDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minty/dao/SquadDao.java" afterDir="false" />
-    </list>
+    <list default="true" id="d7969d38-d6fa-48f7-90a1-814c0e147b74" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,16 +62,18 @@
       <recent name="com.minty.tests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SquadDaoTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.minty.Main" />
+  <component name="RunManager" selected="JUnit.HeroDaoTest">
+    <configuration name="DbTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hero-squad" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.minty.*" />
+          <option name="PATTERN" value="com.minty.database.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.minty.database" />
+      <option name="MAIN_CLASS_NAME" value="com.minty.database.DbTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -96,18 +93,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HeroDaoTest.getHero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SeederTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hero-squad" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.minty.dao.*" />
+          <option name="PATTERN" value="com.minty.database.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.minty.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.minty.dao.HeroDaoTest" />
-      <option name="METHOD_NAME" value="getHero" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.minty.database" />
+      <option name="MAIN_CLASS_NAME" value="com.minty.database.SeederTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -145,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SquadDaoTest" />
-        <item itemvalue="JUnit.SquadDaoTest.createSquad" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.HeroDaoTest" />
-        <item itemvalue="JUnit.HeroDaoTest.getHero" />
+        <item itemvalue="JUnit.SquadDaoTest" />
+        <item itemvalue="JUnit.DbTest" />
+        <item itemvalue="JUnit.SeederTest" />
+        <item itemvalue="JUnit.SquadDaoTest.createSquad" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +162,7 @@
       <workItem from="1651386988595" duration="2021000" />
       <workItem from="1651392519138" duration="1689000" />
       <workItem from="1651397012677" duration="8119000" />
-      <workItem from="1651480092854" duration="9807000" />
+      <workItem from="1651480092854" duration="10213000" />
     </task>
     <servers />
   </component>

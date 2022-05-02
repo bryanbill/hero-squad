@@ -15,8 +15,8 @@ public class Main {
 
         HeroDao heroDao = new HeroDao();
 
+
         get("/", (req, res) -> {
-            heroDao.createHero(sql, new Hero(1, "Superman", "Super Strength", "Kryptonite", 1));
             return "Hello World";
         });
     }

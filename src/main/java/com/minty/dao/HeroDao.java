@@ -43,6 +43,22 @@ public class HeroDao implements IHero {
                 .executeAndFetch(Hero.class);
     }
 
+    /**
+     * @param sql 
+     * @param squadId
+     * @return
+     */
+    @Override
+    public Hero getHeroBySquadId(Connection sql, int squadId) {
+        try {
+            return sql.createQuery("SELECT * FROM heroes WHERE squadId = :squadId")
+                    .addParameter("squadId", squadId)
+                    .executeAndFetchFirst(Hero.class);
+        } catch (Exception e) {
+            throw new RuntimeException("Error Occured", e);
+        }
+    }
+
     public int clearAllHeroes(Connection sql) {
         return sql.createQuery("DELETE FROM heroes")
                 .executeUpdate().getResult();
