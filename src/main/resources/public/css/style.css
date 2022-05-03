@@ -44,7 +44,17 @@ body {
 .h-40{
     height: 40% !important;
 }
+.w-40{
+    width: 30% !important;
+}
 .wrapper{
     width:75% !important;
     margin:0 auto;
+}
+.gap{
+    gap: 10px;
+}
+
+.blur-grey{
+    background: #878585;
 }
