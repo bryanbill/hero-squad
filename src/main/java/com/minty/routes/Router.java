@@ -11,7 +11,6 @@ import spark.template.handlebars.HandlebarsTemplateEngine;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import static spark.Spark.*;
@@ -20,6 +19,16 @@ import static spark.SparkBase.staticFileLocation;
 public class Router {
 
     public static void run() {
+        ProcessBuilder processBuilder = new ProcessBuilder();
+        int port;
+        if (processBuilder.environment().get("PORT") != null) {
+            port = Integer.parseInt(processBuilder.environment().get("PORT"));
+        } else {
+            port = 4567;
+        }
+
+        port(port);
+
         staticFileLocation("/public");
         // Create a connection to the database
         Connection sql = new Db().connect();
@@ -87,7 +96,7 @@ public class Router {
         post("/squads", (req, res) -> {
             Squad squad = new Squad(0, req.queryParams("name"), req.queryParams("cause"), Integer.parseInt(req.queryParams("maxsize")), LocalDateTime.now());
             squadsDao.createSquad(sql, squad);
-            res.redirect("/heroes");
+            res.redirect("/squads");
             return squad;
         });
 

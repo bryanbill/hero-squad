@@ -13,3 +13,7 @@ function delReq(id) {
         window.alert("Error");
     });
 }
+
+function goHome(location) {
+    window.location.href = location;
+}

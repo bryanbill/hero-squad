@@ -9,6 +9,7 @@ public class Db {
      * @return Connection
      */
     public Connection connect() {
+
         try {
             String connString = "jdbc:postgresql://localhost:5432/minty";
             String user = "bill";

@@ -56,5 +56,9 @@ body {
 }
 
 .blur-grey{
-    background: #878585;
+    background: #b5bbbb;
+}
+
+.text-black{
+    color: #000 !important;
 }
