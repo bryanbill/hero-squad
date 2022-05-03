@@ -1,5 +1,7 @@
 package com.minty.models;
 
+import com.minty.dao.SquadDao;
+
 public class Hero {
 
     private int id;
@@ -7,6 +9,7 @@ public class Hero {
     private String power;
     private String weakness;
     private int squadId;
+
 
     public Hero(int id, String name, String power, String weakness, int squadId) {
         this.id = id;
@@ -36,4 +39,6 @@ public class Hero {
     public int getSquadId() {
         return squadId;
     }
+
+
 }
