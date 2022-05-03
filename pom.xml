@@ -107,8 +107,7 @@
                 <version>2.0.3</version>
                 <configuration>
                     <jdkVersion>1.8</jdkVersion>
-
-                    <appName>hero</appName>
+                    <appName>squadsandheroes</appName>
                     <processTypes>
                         <web>java -jar target/hero-1.0-jar-with-dependencies.jar</web>
                     </processTypes>
