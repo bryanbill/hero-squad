@@ -1,0 +1,61 @@
+{{#partial "title"}}
+    Create Hero
+{{/partial}}
+
+{{#partial "content"}}
+    <div class="h-100 blur-grey">
+        <div class="h-100 d-flex  justify-content-center align-items-center">
+
+            <div class="w-40 card p-4 bg-white">
+                <div class="d-flex w-100 justify-content-center">
+                    <img src="/assets/form1.png" class="w-50" alt="...">
+                </div>
+                <form class="form-group" action="/heroes" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="power">Powers</label>
+                        <select type="text" class="form-control" id="power" name="power"
+                                placeholder="Power">
+
+                            <option value="strength">Strength</option>
+                            <option value="speed">Speed</option>
+                            <option value="durability">Durability</option>
+                            <option value="combat">Combat</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="weakness">Weakness</label>
+                        <select type="text" class="form-control" id="weakness" name="weakness"
+                                placeholder="Weakness">
+
+                            <option value="kryptonite">Kryptonite</option>
+                            <option value="durability">Durability</option>
+                            <option value="broke">Being Broke</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="squadId">Squad</label>
+                        <select type="text" class="form-control" id="squadId" name="squadId"
+                                placeholder="Select Squad">
+                            {{#each squads}}
+                            <option value="{{id}}">{{squadName}}</option>
+                            {{/each}}
+
+                        </select>
+
+                    </div>
+
+                    <div class="w-100">
+                        <button type="submit" class="btn btn-outline-dark w-100">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{{/partial}}
+{{> layout.hbs }}

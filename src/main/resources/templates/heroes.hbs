@@ -1,0 +1,53 @@
+{{#partial "title" }}
+    Heroes
+{{/partial}}
+
+
+{{#partial "nav"}}
+    <div class="wrapper my-1 position-sticky">
+        <nav class="d-flex justify-content-between align-items-center">
+            <div class="d-flex gap">
+                <a class="navbar-brand text-black" href="/">Hero Squad</a>
+                <a class="navbar-link text-black" href="/heroes">Heroes</a>
+                <a class="navbar-link text-black" href="/squads">Squads</a>
+            </div>
+            <div class="d-flex gap">
+                <a class="btn btn-lg btn-dark text-light" href="/new/hero">Create Hero</a>
+                <a class="btn btn-lg btn-outline-dark text-black" href="/new/squad">Create Squad</a>
+            </div>
+        </nav>
+    </div>
+{{/partial}}
+{{#partial "content"}}
+
+    <div class="wrapper my-1">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="w-100">
+                    <div class="jumbotron bg-light border border-dark text-center">
+                        <h2 class="text-dark">Heroes</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    {{#each heroes}}
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="/assets/hero1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{name}}</h5>
+                                    <div class="d-flex justify-content-between">
+                                        <a href="/heroes/{{id}}" class="btn btn-dark btn-lg">View</a>
+                                        <button onclick="delReq({{id}})" class="btn btn-outline-danger">
+                                            Delete
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+{{/partial}}
+{{> layout.hbs}}

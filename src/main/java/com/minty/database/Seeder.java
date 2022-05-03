@@ -10,6 +10,8 @@ public class Seeder extends Db {
            conn.createQuery("CREATE TABLE IF NOT EXISTS heroes (id SERIAL PRIMARY KEY, heroName VARCHAR(255), power VARCHAR(255), weakness VARCHAR(255), squadId INTEGER)").executeUpdate();
            conn.createQuery("CREATE TABLE IF NOT EXISTS squads (id SERIAL PRIMARY KEY, squadName VARCHAR(255), cause VARCHAR(255), maxSize INTEGER, createdAt VARCHAR(100))").executeUpdate();
 
+           //Close connection
+           close(conn);
        }catch (Exception e){
            throw new RuntimeException("Could not connect to database", e);
        }
