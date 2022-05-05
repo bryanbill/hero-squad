@@ -11,9 +11,9 @@ public class Db {
     public Connection connect() {
 
         try {
-            String connString = "jdbc:postgresql://localhost:5432/minty";
-            String user = "bill";
-            String password = "<cocoginger45";
+            String connString = "jdbc:postgresql://ec2-35-168-194-15.compute-1.amazonaws.com:5432/d95g7pn9ggh4n5";
+            String user = "jdmptvfntsrceu";
+            String password = "e16fa901f5d45c21ce13dae0541a118aeb4fc13ccaf6a6fcc6ad35bfc0fa00cb";
 
             return new Sql2o(connString, user, password).open();
         } catch (Exception e) {
