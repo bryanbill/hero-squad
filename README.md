@@ -48,7 +48,7 @@ Contributions to the project are welcome. Fork this repo to contribute.u
 
 ## Live Site
 
-#### Available Here: (https://hero.soloo.me/)
+#### Available Here: (http://squadsandheroes.herokuapp.com/)
 
 
 ## Licence
